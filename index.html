@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margarita — Demos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F8F9FA;
+            color: #333;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #2E5FA3;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.85;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2E5FA3;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2E5FA3;
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #1e4080;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Margarita</h1>
+        <p>Demos</p>
+    </header>
+
+    <div class="grid">
+
+        <div class="card">
+            <div class="card-icon">🌤️</div>
+            <h2>Weather App</h2>
+            <p>Enter a city to see current weather conditions and a 3-day forecast. Built with Streamlit and the Open-Meteo API.</p>
+            <a href="https://weather-app-986qvb35r7nfqyknfsmwbb.streamlit.app" class="btn" target="_blank">Open App →</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📊</div>
+            <h2>Data Explorer</h2>
+            <p>Upload any CSV file, select a variable, and visualize it over time. Interactive chart with summary statistics.</p>
+            <a href="https://file-explore-t7j65jnjtujhpxohc8gytf.streamlit.app" class="btn" target="_blank">Open App →</a>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🍦</div>
+            <h2>Ice Cream Sales Predictor</h2>
+            <p>Pick a city and date, and get a predicted sales forecast powered by a machine learning model and live weather data.</p>
+            <a href="https://ice-cream-demo1-jqcdsyyjqkx5jyedqksnkn.streamlit.app" class="btn" target="_blank">Open App →</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Built with Streamlit · Deployed on Streamlit Community Cloud</p>
+    </footer>
+
+</body>
+</html>
